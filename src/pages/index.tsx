@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from 'next';
+import { Container, Row, Col } from 'react-bootstrap';
 
 interface Props {
   launch: {
@@ -23,6 +24,13 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
         {launch.site}
         {date.toDateString()}
       </p>
+      <Container>
+        <Row>
+          <Col>
+            <h1>Hello Bootstrap!</h1>
+          </Col>
+        </Row>
+      </Container>
     </main>
   );
 };
