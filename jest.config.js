@@ -8,6 +8,10 @@ module.exports = {
   },
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
   moduleNameMapper: {
+    '^@src/(.*)$': '<rootDir>/src/$1',
+    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
+    '^@components/(.*)$': '<rootDir>/src/components/$1',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
   },
