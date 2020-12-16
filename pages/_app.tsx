@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+
 import GlobalStyled from '@styles/GlobalStyled';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {

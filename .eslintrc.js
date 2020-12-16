@@ -55,6 +55,8 @@ module.exports = {
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
           },
         ],
+        'no-shadow': 'off', // Disabled for "enum" error
+        '@typescript-eslint/no-shadow': ['error'], // instead of TypeScript
         'prettier/prettier': [
           'error',
           {},
