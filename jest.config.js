@@ -8,8 +8,10 @@ module.exports = {
   },
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
   moduleNameMapper: {
-    '^@src/(.*)$': '<rootDir>/src/$1',
-    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
+    /* This Comtent must be the same with "tsconfig.json => paths" */
+    '^@Src/(.*)$': '<rootDir>/src/$1',
+    '^@Pages/(.*)$': '<rootDir>/pages/$1',
+    '^@Types/(.*)$': '<rootDir>/types/$1',
     '^@styles/(.*)$': '<rootDir>/src/styles/$1',
     '^@components/(.*)$': '<rootDir>/src/components/$1',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',

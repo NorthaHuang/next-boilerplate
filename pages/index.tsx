@@ -1,11 +1,10 @@
 import { GetServerSideProps, NextPage } from 'next';
 
-import type HomeProps from '@srcTypes/pageProps/Home';
 import Home from '@components/Home';
+import type HomeProps from '@Types/pageProps/Home';
 
 // eslint-disable-next-line react/jsx-props-no-spreading
 const IndexPage: NextPage<HomeProps> = (props) => <Home {...props} />;
-export default IndexPage;
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
   const response = await fetch('https://api.spacexdata.com/v3/launches/next');
@@ -22,3 +21,5 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
     },
   };
 };
+
+export default IndexPage;

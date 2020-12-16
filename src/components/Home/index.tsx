@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-import type HomeProps from '@srcTypes/pageProps/Home';
+import type HomeProps from '@Types/pageProps/Home';
 
 const Home: React.FC<HomeProps> = ({ launch }) => {
   const date = new Date(launch.timestamp);

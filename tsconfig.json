@@ -44,12 +44,13 @@
       Additional Checks
       */
 		"baseUrl": ".",														/* Base directory to resolve non-absolute module names. */
-		"paths": {
-			"@/*": ["src/*"],
-			"@pages/*": ["pages/*"],
+		"paths": { 
+      /* This Comtent must be the same with "jest.config.js => moduleNameMapper" */
+			"@Src/*": ["src/*"],
+			"@Pages/*": ["pages/*"],
+			"@Types/*": ["types/*"],
 			"@styles/*": ["src/styles/*"],
 			"@components/*": ["src/components/*"],
-			"@srcTypes/*": ["src/types/*"]
 		},																				/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
 		"types": ["jest"],												/* Type declaration files to be included in compilation. */
     "esModuleInterop": true, 									/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
