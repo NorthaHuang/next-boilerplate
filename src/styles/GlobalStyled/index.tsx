@@ -4,11 +4,16 @@ import bootstrapReboot from './vendors/bootstrap-reboot';
 import bootstrapGrid from './vendors/bootstrap-grid';
 
 const GlobalStyled = createGlobalStyle`
-  /* Normalize */
+  /** Normalize */
   ${bootstrapReboot}
 
-  /* Grid System */
+  /** Grid System */
   ${bootstrapGrid}
+
+  /** Custom Setting */
+  select {
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyled;
