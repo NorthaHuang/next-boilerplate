@@ -1,16 +1,15 @@
 import { NextPage } from 'next';
+import DefaultGrid from '@components/Shared/DefaultGrid';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import PageLayout from '@components/layout/Page';
 
 const Custom404: NextPage = () => (
-  <Container>
-    <Row>
-      <Col>
-        <h1>404</h1>
-        <h2>Oops... Something went wrong!</h2>
-      </Col>
-    </Row>
-  </Container>
+  <PageLayout>
+    <DefaultGrid>
+      <h1>404</h1>
+      <h2>Oops... Something went wrong!</h2>
+    </DefaultGrid>
+  </PageLayout>
 );
 
 export default Custom404;

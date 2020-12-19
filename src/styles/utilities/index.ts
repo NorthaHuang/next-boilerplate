@@ -1,5 +1,4 @@
 import Color from './enums/Color';
 
-export default {
-  Color,
-};
+// eslint-disable-next-line import/prefer-default-export
+export { Color };
