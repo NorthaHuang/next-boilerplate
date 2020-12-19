@@ -45,7 +45,7 @@
       */
 		"baseUrl": ".",														/* Base directory to resolve non-absolute module names. */
 		"paths": { 
-      /* This Comtent must be the same with "jest.config.js => moduleNameMapper" */
+      /* This "Content" must be the same with "jest.config.js => moduleNameMapper" */
 			"@Src/*": ["src/*"],
 			"@Pages/*": ["pages/*"],
 			"@Types/*": ["types/*"],
