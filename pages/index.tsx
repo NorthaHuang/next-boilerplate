@@ -1,14 +1,21 @@
 import { GetServerSideProps, NextPage } from 'next';
+import Head from 'next/head';
 
+import PageLayout from '@components/layout/PageLayout';
 import Home from '@components/Home';
-import PageLayout from '@components/layout/Page';
-import type HomeProps from '@Types/pageProps/Home';
+import type { HomeProps } from '@components/Home/type';
 
 const IndexPage: NextPage<HomeProps> = (props) => (
-  <PageLayout>
-    {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-    <Home {...props} />
-  </PageLayout>
+  <>
+    <Head>
+      <title>Home | Website</title>
+      <meta name="description" content="My Next.js website" />
+    </Head>
+
+    <PageLayout>
+      <Home {...props} />
+    </PageLayout>
+  </>
 );
 
 export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {

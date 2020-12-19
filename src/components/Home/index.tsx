@@ -1,26 +1,24 @@
-import type HomeProps from '@Types/pageProps/Home';
+import Grid from '@components/layout/Grid';
 
-import DefaultGrid from '@components/Shared/DefaultGrid';
+import type { HomeProps } from './type';
 
 const Home: React.FC<HomeProps> = ({ launch }) => {
-  const date = new Date(launch.timestamp);
+  const date = new Date();
 
   return (
-    <div>
-      <DefaultGrid>
-        <h2>
-          Next SpaceX Launch:
-          {launch.mission}
-        </h2>
-        <p>
-          {launch.rocket}
-          <span>will take off from</span>
-          {launch.site}
-          {date.toDateString()}
-        </p>
-        <h2>Hello Bootstrap!</h2>
-      </DefaultGrid>
-    </div>
+    <Grid>
+      <h2>
+        Next SpaceX Launch:
+        {launch.mission}
+      </h2>
+      <p>
+        {launch.rocket}
+        <span>will take off from</span>
+        {launch.site}
+        {date.toDateString()}
+      </p>
+      <h2>Hello Bootstrap-Grid!</h2>
+    </Grid>
   );
 };
 

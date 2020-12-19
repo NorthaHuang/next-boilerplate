@@ -9,7 +9,6 @@ export default {
   component: Page,
 } as Meta;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
 const Template: Story<PageProps> = (args) => <Page {...args} />;
 
 export const LoggedIn = Template.bind({});

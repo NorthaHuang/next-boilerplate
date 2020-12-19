@@ -43,11 +43,7 @@ module.exports = {
         'plugin:import/typescript',
       ],
       rules: {
-        'react/prop-types': 'off', // We will use TypeScript's types for component props instead
-        'react/react-in-jsx-scope': 'off', // No need to import React when using Next.js
-        'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
-        'react/jsx-one-expression-per-line': 'off',
-        'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with Next.js's <Link /> components
+        '@typescript-eslint/no-shadow': ['error'], // instead of TypeScript
         '@typescript-eslint/no-unused-vars': ['error'], // Why would you want unused vars?
         '@typescript-eslint/explicit-function-return-type': [ // I suggest this setting for requiring return types on functions only where usefull
           'warn',
@@ -56,15 +52,14 @@ module.exports = {
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
           },
         ],
-        'no-shadow': 'off', // Disabled for "enum" error
-        '@typescript-eslint/no-shadow': ['error'], // instead of TypeScript
-        'prettier/prettier': [
-          'error',
-          {},
-          {
-            usePrettierrc: true,
-          },
-        ], // Includes .prettierrc.js rules
+
+        'react/prop-types': 'off', // We will use TypeScript's types for component props instead
+        'react/react-in-jsx-scope': 'off', // No need to import React when using Next.js
+        'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+        'react/jsx-one-expression-per-line': 'off',
+        'react/jsx-props-no-spreading': 'off',
+
+        'import/prefer-default-export': 'off',
         'import/no-extraneous-dependencies': [
           'error',
           {
@@ -81,6 +76,18 @@ module.exports = {
             tsx: 'never',
           },
         ],
+
+        'prettier/prettier': [
+          'error',
+          {},
+          {
+            usePrettierrc: true,
+          },
+        ], // Includes .prettierrc.js rules
+
+        'jsx-a11y/anchor-is-valid': 'off', // This rule is not compatible with Next.js's <Link /> components
+
+        'no-shadow': 'off', // Disabled for "enum" error
       },
     },
   ],

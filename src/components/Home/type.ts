@@ -1,4 +1,4 @@
-type HomeProps = {
+export type HomeProps = {
   launch: {
     mission: string;
     site: string;
@@ -6,5 +6,3 @@ type HomeProps = {
     rocket: string;
   };
 };
-
-export default HomeProps;

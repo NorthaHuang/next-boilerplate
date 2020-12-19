@@ -1,21 +1,23 @@
 import { NextPage } from 'next';
-import DefaultGrid from '@components/Shared/DefaultGrid';
+import Head from 'next/head';
 
-import PageLayout from '@components/layout/Page';
-import type ErrorProps from '@Types/pageProps/Error';
+import PageLayout from '@components/layout/PageLayout';
+import Error from '@components/Error';
+import type { ErrorProps } from '@components/Error/type';
 
-const Error: NextPage<ErrorProps> = ({ statusCode }) => (
-  <PageLayout>
-    <DefaultGrid>
-      <h1>{statusCode}</h1>
-      <h2>
-        {statusCode ? `An error ${statusCode} occurred on server` : 'An error occurred on client'}
-      </h2>
-    </DefaultGrid>
-  </PageLayout>
+const ErrorPage: NextPage<ErrorProps> = (props) => (
+  <>
+    <Head>
+      <title>Something went wrong</title>
+    </Head>
+
+    <PageLayout>
+      <Error {...props} />
+    </PageLayout>
+  </>
 );
 
-Error.getInitialProps = ({ res, err }) => {
+ErrorPage.getInitialProps = ({ res, err }) => {
   let statusCode;
 
   if (res) {
@@ -29,4 +31,4 @@ Error.getInitialProps = ({ res, err }) => {
   return { statusCode };
 };
 
-export default Error;
+export default ErrorPage;

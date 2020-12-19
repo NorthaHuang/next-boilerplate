@@ -1,12 +1,12 @@
-import DefaultGrid from '@components/Shared/DefaultGrid';
+import Grid from '@components/layout/Grid';
 
 import StyledWrapper from './styled';
 
 const Header: React.FC = () => (
   <StyledWrapper>
-    <DefaultGrid>
+    <Grid>
       <h1>This is Header</h1>
-    </DefaultGrid>
+    </Grid>
   </StyledWrapper>
 );
 
