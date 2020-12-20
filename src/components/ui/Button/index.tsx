@@ -1,10 +1,10 @@
 const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = ({
   type = 'button',
   children,
-  ...rest
+  ...props
 }) => (
   // eslint-disable-next-line react/button-has-type
-  <button type={type} {...rest}>
+  <button type={type} {...props}>
     {children}
   </button>
 );
