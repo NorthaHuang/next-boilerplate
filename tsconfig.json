@@ -48,9 +48,9 @@
       /* This "Content" must be the same with "jest.config.js => moduleNameMapper" */
 			"@Src/*": ["src/*"],
 			"@Pages/*": ["pages/*"],
-			"@Types/*": ["types/*"],
-			"@styles/*": ["src/styles/*"],
 			"@components/*": ["src/components/*"],
+			"@ui": ["src/components/ui"],
+			"@styles/*": ["src/styles/*"],
 		},																				/* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
 		"types": ["jest"],												/* Type declaration files to be included in compilation. */
     "esModuleInterop": true, 									/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */

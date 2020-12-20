@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import PageLayout from '@components/layout/PageLayout';
 import Grid from '@components/layout/Grid';
-import Button from '@components/utilities/Button';
+import { Button } from '@ui';
 
 const Custom404: NextPage = () => {
   return (

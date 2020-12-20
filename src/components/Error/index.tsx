@@ -1,5 +1,5 @@
 import Grid from '@components/layout/Grid';
-import Button from '@components/utilities/Button';
+import { Button } from '@ui';
 
 import type { ErrorProps } from './type';
 

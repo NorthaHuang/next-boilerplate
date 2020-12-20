@@ -11,9 +11,9 @@ module.exports = {
     /* This "Content" must be the same with "tsconfig.json => paths" */
     '^@Src/(.*)$': '<rootDir>/src/$1',
     '^@Pages/(.*)$': '<rootDir>/pages/$1',
-    '^@Types/(.*)$': '<rootDir>/types/$1',
-    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
     '^@components/(.*)$': '<rootDir>/src/components/$1',
+    '^@ui': '<rootDir>/src/components/ui',
+    '^@styles/(.*)$': '<rootDir>/src/styles/$1',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
   },
