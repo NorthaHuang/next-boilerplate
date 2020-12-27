@@ -7,6 +7,7 @@ const Home: React.FC<HomeProps> = ({ launch }) => {
 
   return (
     <Grid>
+      <h1>Hello styled-components!</h1>
       <h2>
         Next SpaceX Launch:
         {launch.mission}
@@ -17,7 +18,6 @@ const Home: React.FC<HomeProps> = ({ launch }) => {
         {launch.site}
         {date.toDateString()}
       </p>
-      <h2>Hello Bootstrap-Grid!</h2>
     </Grid>
   );
 };
