@@ -11,6 +11,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <title>Home | Website</title>
         <meta name="description" content="My Next.js website" />
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
 
       <GlobalStyled />
