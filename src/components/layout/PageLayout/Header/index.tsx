@@ -1,13 +1,13 @@
 import Grid from '@components/layout/Grid';
 
-import StyledWrapper from './styled';
+import S from './styled';
 
 const Header: React.FC = () => (
-  <StyledWrapper>
+  <S.Wrapper>
     <Grid>
       <h1>This is Header</h1>
     </Grid>
-  </StyledWrapper>
+  </S.Wrapper>
 );
 
 export default Header;

@@ -1,13 +1,13 @@
 import Grid from '@components/layout/Grid';
 
-import StyledWrapper from './styled';
+import S from './styled';
 
 const Footer: React.FC = () => (
-  <StyledWrapper>
+  <S.Wrapper>
     <Grid>
       <h2>This is Footer</h2>
     </Grid>
-  </StyledWrapper>
+  </S.Wrapper>
 );
 
 export default Footer;

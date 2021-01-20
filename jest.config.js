@@ -12,7 +12,7 @@ module.exports = {
     '^@Src/(.*)$': '<rootDir>/src/$1',
     '^@Pages/(.*)$': '<rootDir>/pages/$1',
     '^@components/(.*)$': '<rootDir>/src/components/$1',
-    '^@ui': '<rootDir>/src/components/ui',
+    '^@ui': '<rootDir>/src/components/ui/$1',
     '^@styles/(.*)$': '<rootDir>/src/styles/$1',
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',

@@ -16,9 +16,7 @@ const Custom404: NextPage = () => {
         <Grid>
           <h1>404</h1>
           <h2>Oops... Page not found!</h2>
-          <Button type="button" onClick={() => window.history.back()}>
-            Take me back home
-          </Button>
+          <Button onClick={() => window.history.back()}>Take me back home</Button>
         </Grid>
       </PageLayout>
     </>
